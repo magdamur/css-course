@@ -1,0 +1,35 @@
+selector
+{
+  property: propertyValue;
+}
+
+eg:
+
+p
+{
+  color: blue;
+}
+
+CSS Selectors:
+-tag name 
+    p { color: red; }
+-class name 
+    .carType { color: red; }
+-element Id 
+    #siteHeader { color: red; }
+-combined selector 
+    p.carType { color: red; }
+-child selectors 
+    .carType a { color: red; } 
+    .carType >  a { color: red; }
+-pseudo classes
+    a:link { color: red; }
+    a:visited { color: red; }
+    a:hover { color: red; }
+    a:active { color: red; }
+-pseudo elements
+    p:first-child { color: red; }
+    
+The CSS Box Model
+
+Content -> Padding -> Border -> Margin
