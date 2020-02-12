@@ -1,9 +1,9 @@
 CSS3 selectors:
   Box Model
-  Background and border changes
-  Text effects
+  Background and border changes 
   2d and 3d transformations
   Animations
+  Text effects 
   Column-based layout
   User interface changes
   
@@ -21,3 +21,84 @@ CSS3 modules:
   
   up-to-date list of modules:
   http://www.css3.info/modules/
+  
+  
+CSS3 selectors:
+  Background and borders:
+    div {border-radius: 30px;}
+    the other browsers support:
+    div {-moz-border-radius: 30px;}
+    div {-webkit-border-radius: 30px;}
+    div {border-radius: 30px;}
+    ***
+    body {background-size: 300px 100px;}  body {background-size: 100% 100%;}
+    ***
+    div {background-origin: border-box;}  div {background-origin: content-box;}
+    ***
+    body {background: url(img1.jpg), url(img2.jpg);}
+    ***
+    div {
+      webkit-box-shadow 0 0 4px rgb(0, 0, 0, .75)
+      -moz-box-shadow 0 0 4px rgb(0, 0, 0, .75)
+      box-shadow 0 0 4px rgb(0, 0, 0, .75)
+      }
+    ***
+    Gradients:
+      div {height: 200px; background: linear-gradient(red, green);}  
+      div {height: 200px; background: linear-gradient(to right, red, green);}
+      div {height: 200px; background: linear-gradient(to bottom right, red, green);}
+      ***
+      div {height: 200px; with:100px; background: radial-gradient(red, green, yellow);}  
+      div {height: 200px; with:100px; background: radial-gradient(red 10%, green 30%, yellow 50%);}
+      the other browsers support:
+      .bg-gradient {
+        background: -webkit-linear-gradient(left, red, blue); /* For Safari 5.1 to 6 */
+        background: -o-linear-gradient(right, red, blue); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, red, blue); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, red, blue);
+        }
+      ***
+CSS Transformations:
+CSS3 adds support for 2D and 3D transformations (allow us to change size, shape, position)
+Supported transformations are:
+  translate
+  rotate div {transform: rotate(45deg);}
+  scale
+  scew div {transform: skew(30deg 20deg);}
+  matrix
+  
+CSS3 Animations:
+  div {animation: homeAnimation 20s;}
+  @keyframes homeAnimation {
+  0% {background: red; left: 0; top: 0;}
+  25% {background: orange; left: 100px; top: 0;}
+  50% {background: yellow; left: 100px; top: 200px;}
+  75% {background: white; left: 0; top: 200px;}
+  100% {background: pink; left: 0; top: 0;}
+  }
+Animations properties:
+  @keyframes
+  animation
+  animation-delay
+  animation-duration
+  animation-fill-mode
+  animation-iteration-count
+  animation-name
+  animation-play-state
+  animation-timing-function
+  
+Text effects:
+  text-shadow: 2px 2px 2px #ff0000;
+  @font-face (.ttf, .otf, .woff, .svg - browser dependant!)
+  
+  @font-face {font-family: headerFont; src: url(some.woff)}
+  div {font-family: headerFont;}
+  
+CSS3 Multi-column:
+  .multi-column {column-count: 3;}
+  .multi-column {column-width: 30em;} 
+  .multi-column {column-count: 3; column-gap: 40px;}
+  .multi-column {column-width: 300px; column-gap: 40px;}
+  the other browsers support:
+  .multi-column {-webkit-column-count: 3;}
+  .multi-column {column-count: 3;}
