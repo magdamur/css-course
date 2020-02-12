@@ -9,7 +9,7 @@ p
 {
   color: blue;
 }
-
+*****************************************************************************************************************************
 CSS Selectors:
 -tag name 
     p { color: red; }
@@ -29,7 +29,17 @@ CSS Selectors:
     a:active { color: red; }
 -pseudo elements
     p:first-child { color: red; }
-    
+*****************************************************************************************************************************
 The CSS Box Model
 
 Content -> Padding -> Border -> Margin
+*****************************************************************************************************************************
+CSS3 Selectors:
+ -CSS3 extends the selector options of CSS2.1
+ -new options: Attribute selectors, Pseudo classes, Pseudo elements
+*****************************************************************************************************************************
+New Attribute selectors:
+  -StartsWith: a[href^="https"]
+  -EndsWith: a[href$="store"]
+  -Contains: a[href*="home"]
+*****************************************************************************************************************************
