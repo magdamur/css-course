@@ -62,5 +62,12 @@ Pseudo classes:
   :optional input:optional{} <p>An optional input element:<input></p><p>A required input element:<input required></p>
   :read-only input:-moz-read-only{/* For Firefox */} input:read-only{} <input readonly>
   :read-write input:-moz-read-write{/* For Firefox */} input:read-write{}
-  
 *****************************************************************************************************************************
+Pseudo elements:
+  ::after
+  ::before
+  ::first-letter
+  ::first-line
+  ::marker
+  ::placeholder
+  ::selection
