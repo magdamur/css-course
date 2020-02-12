@@ -35,11 +35,32 @@ The CSS Box Model
 Content -> Padding -> Border -> Margin
 *****************************************************************************************************************************
 CSS3 Selectors:
- -CSS3 extends the selector options of CSS2.1
- -new options: Attribute selectors, Pseudo classes, Pseudo elements
-*****************************************************************************************************************************
+  CSS3 extends the selector options of CSS2.1
+  new options: Attribute selectors, Pseudo classes, Pseudo elements
+*******************************************************************
 New Attribute selectors:
-  -StartsWith: a[href^="https"]
-  -EndsWith: a[href$="store"]
-  -Contains: a[href*="home"]
+  StartsWith: a[href^="https"]
+  EndsWith: a[href$="store"]
+  Contains: a[href*="home"]
+*******************************************************************
+Pseudo classes:
+  :nth-child Selector: p:nth-child(2n){} - selects nth child regardless of type
+  :nth-last-child Selector: p:nth-last-child(2){} - it will start counting from the last element
+  :nth-of-type Selector p:nth-of-type(2){} - selects nth child of type (second paragraph in this case)
+  :first-of-type Selector p:first-of-type{}
+  :last-child Selector p:last-child{}
+  :only-child Selector p:only-child{} (selects p if p is only child - one and only eg: <div><p>text</p></div>)
+  :not Selector :not(p){} selects all elements except p
+  :out-of-range Selector input:out-of-range {border 2px solid red;} <input type="number" min="1" max="20" value="100" />
+  :root :root{}
+  :empty p:empty{} <p></p>
+  :target :target{}  <p><a href="#news1">Jump to New content 1</a></p>
+  :enabled input[type=text]:enabled{}
+  :disabled input[type=text]:disabled{}
+  :checked input:checked{}
+  :invalid input:invalid{} <input type="email" value="some">
+  :optional input:optional{} <p>An optional input element:<input></p><p>A required input element:<input required></p>
+  :read-only input:-moz-read-only{/* For Firefox */} input:read-only{} <input readonly>
+  :read-write input:-moz-read-write{/* For Firefox */} input:read-write{}
+  
 *****************************************************************************************************************************
